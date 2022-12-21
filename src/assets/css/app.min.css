@@ -1,4 +1,4 @@
-
+@import url(css.css);
 
 html {
     position: relative;
@@ -78,7 +78,7 @@ body {
     overflow: hidden;
     padding: 0 15px 65px 15px;
     min-height: 80vh;
-    margin-top: 70px
+    padding-top: 100px;
 }
 
 .left-side-menu {
@@ -1099,6 +1099,7 @@ body.boxed-layout.enlarged .footer {
 }
 
 .cta-box {
+    background-image: url(../images/bg-pattern-2.png);
     background-size: cover
 }
 
@@ -2721,6 +2722,11 @@ div.hopscotch-bubble .hopscotch-content {
     color: #fff
 }
 
+.jstree-default .jstree-icon,
+.jstree-default .jstree-node {
+    background-image: url(../images/plugins/jstree.png)
+}
+
 .jstree-default .jstree-node {
     background-position: -292px -4px;
     background-repeat: repeat-y
@@ -2737,6 +2743,9 @@ div.hopscotch-bubble .hopscotch-content {
     height: 28px
 }
 
+.jstree-default>.jstree-container-ul .jstree-loading>.jstree-ocl {
+    background: url(../images/plugins/loading.gif) center center no-repeat
+}
 
 .jstree-default .jstree-icon:empty {
     width: 24px;
@@ -3595,7 +3604,13 @@ div.dt-button-info h2 {
     margin-right: -1.5rem
 }
 
-
+@font-face {
+    font-family: summernote;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/summernote.bin);
+    src: url(../fonts/summernote-1.bin) format("embedded-opentype"), url(../fonts/summernote-2.bin) format("woff"), url(../fonts/summernote-3.bin) format("truetype")
+}
 
 .note-editor.note-frame {
     border: 1px solid #4b5460;
@@ -4076,6 +4091,10 @@ body.authentication-bg {
     text-transform: uppercase;
     font-weight: 700;
     text-align: center
+}
+
+body.authentication-bg-pattern {
+    background-image: url(../images/bg-pattern.png)
 }
 
 .logout-icon {
@@ -4748,6 +4767,23 @@ body.authentication-bg {
     margin: 10px 0;
 }
 
+.left-side-menu {
+    overflow-y: auto;
+    text-align: start;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
 
+.left-side-menu::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
 
+  .notification-list:hover .dropdown-menu{
+    display: block;
+  }
+
+  .list_button{
+    text-align: end;
+  }
 /*# sourceMappingURL=app.min.css.map */
